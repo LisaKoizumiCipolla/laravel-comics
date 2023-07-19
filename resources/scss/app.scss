@@ -1,1 +1,54 @@
 @import "~bootstrap/scss/bootstrap";
+
+@use './partials/mixins' as *;
+
+header{
+    @include flex(row, space-between, center);
+    margin: auto;
+    padding: 15px 0 15px;
+
+    ul{
+        @include flex();
+    }
+
+    img{
+        height: 80px;
+    }
+    
+    li{
+        padding-left: 30px;
+        font-size: .85rem;
+        font-weight: 700;
+        color: #1C1C1C;
+    
+        &:hover{
+        color: #0282F9;
+        cursor: pointer;
+        }
+    }
+    
+    .selected{
+        color: #0282F9;
+    }
+
+}
+
+    img{
+        height: 80px;
+    }
+
+    li{
+        padding-left: 30px;
+        font-size: .85rem;
+        font-weight: 700;
+        color: #1C1C1C;
+
+        &:hover{
+        color: #0282F9;
+        cursor: pointer;
+        }
+    }
+
+    .selected{
+        color: #0282F9;
+    }
